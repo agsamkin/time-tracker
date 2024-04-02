@@ -1,3 +1,5 @@
+base-url: /api/v1
+
 server:
   port: 8081
 
@@ -11,10 +13,12 @@ spring:
     password: postgres
 
   jpa:
-    show-sql: false
+    show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
+      jdbc:
+        time_zone: UTC
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
