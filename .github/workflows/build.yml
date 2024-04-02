@@ -13,14 +13,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: do to docker
-        run: cd docker
-
-      - name: check ls
-        run: ls -a
-
       - name: Build the Docker image
-        run: docker-compose build
+        run: cd docker && docker-compose build
 
       - name: up postgresql container runs
         run: docker-compose up -d
