@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build the Docker image
-        run: cd ./docker && docker-compose build
+        run: cd docker && docker-compose build
       - name: up postgresql container runs
         run: docker-compose up -d
       - uses: actions/checkout@v4
