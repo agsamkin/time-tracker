@@ -17,7 +17,7 @@ jobs:
         run: cd docker && docker-compose build
 
       - name: up postgresql container runs
-        run: docker-compose up -d
+        run: cd docker && docker-compose up -d
 
 
       - name: Execute build
