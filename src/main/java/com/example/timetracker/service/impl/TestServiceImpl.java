@@ -18,6 +18,7 @@ public class TestServiceImpl implements TestService {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        System.out.println();
     }
 
     @TrackAsyncTime
