@@ -27,8 +27,6 @@ public class TrackTimeAspect {
 
     private final TimeMeasurementService timeMeasurementService;
 
-    private final MethodInfoService methodInfoService;
-
     @Pointcut("@annotation(com.example.timetracker.annotation.TrackTime)")
     public void trackTimePointcut() {
     }
@@ -78,10 +76,10 @@ public class TrackTimeAspect {
             return handler;
         }).get();
 
-        if (Objects.nonNull(handler.getResult())) {
-            return handler.getResult();
-        } else {
+        if (Objects.nonNull(handler.getException())) {
             throw handler.getException();
+        } else {
+            return handler.getResult();
         }
     }
 
