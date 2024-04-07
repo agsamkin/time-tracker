@@ -1,6 +1,6 @@
 # Service for measuring the execution time of methods
 
-[![build and test](https://github.com/agsamkin/dz1/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/agsamkin/dz1/actions/workflows/build.yml)
+[![build and test](https://github.com/agsamkin/time-tracker/actions/workflows/build.yml/badge.svg)](https://github.com/agsamkin/time-tracker/actions/workflows/build.yml)
 
 The service implements the ability to measure the execution time of methods and analyze the results of these measurements.
 The service is implemented using Spring AOP, Spring Web, Spring JPA.
