@@ -2,7 +2,6 @@ package com.example.timetracker.aspect;
 
 import com.example.timetracker.model.MethodInfo;
 import com.example.timetracker.model.TimeMeasurement;
-import com.example.timetracker.service.MethodInfoService;
 import com.example.timetracker.service.TimeMeasurementService;
 
 import lombok.RequiredArgsConstructor;
