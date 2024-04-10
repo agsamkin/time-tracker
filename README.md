@@ -50,7 +50,7 @@ API documentation is available by clicking here: [http://host:port/api-doc.html]
 Request example:
 
 ```
-GET http://localhost:8080/api/v1/time-measurement/log?from=2024-03-01T00:00:00&to=2024-03-31T23:59:59
+GET http://localhost:8080/api/v1/time-measurements/log?from=2024-03-01T00:00:00&to=2024-03-31T23:59:59
 ```
 
 Response example:
@@ -85,7 +85,7 @@ Response example:
 Request example:
 
 ``` 
-GET http://localhost:8080/api/v1/time-measurement/total?from=2024-03-01T00:00:00&to=2024-03-31T23:59:59
+GET http://localhost:8080/api/v1/time-measurements/total?from=2024-03-01T00:00:00&to=2024-03-31T23:59:59
 ```
 
 Response example:
@@ -102,7 +102,7 @@ Response example:
 Request example:
 
 ```
-GET http://localhost:8080/api/v1/time-measurement/average?from=2024-03-01T00:00:00&to=2024-03-31T23:59:59
+GET http://localhost:8080/api/v1/time-measurements/average?from=2024-03-01T00:00:00&to=2024-03-31T23:59:59
 ```
 
 Response example:
