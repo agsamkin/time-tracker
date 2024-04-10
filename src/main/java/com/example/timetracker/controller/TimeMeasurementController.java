@@ -7,8 +7,10 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Pattern;
+
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -27,14 +29,14 @@ import java.util.Optional;
 
 import static com.example.timetracker.controller.TimeMeasurementController.TIME_MEASUREMENT_CONTROLLER_PATH;
 
-@Tag(name = "time-measurement-controller", description = "Time measurement controller")
 @Validated
+@Tag(name = "time-measurement-controller", description = "Time measurement controller")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("${base-url}" + TIME_MEASUREMENT_CONTROLLER_PATH)
 public class TimeMeasurementController {
 
-    public static final String TIME_MEASUREMENT_CONTROLLER_PATH = "/time-measurement";
+    public static final String TIME_MEASUREMENT_CONTROLLER_PATH = "/time-measurements";
 
     private final TimeMeasurementService timeMeasurementService;
 
